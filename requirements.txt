@@ -1,0 +1,8 @@
+# YOLO-pose (Ultralytics; подтянет torch)
+ultralytics>=8.3.0
+opencv-python==4.9.0.80
+numpy==1.24.3
+matplotlib==3.7.2
+jupyter==1.0.0
+scikit-learn==1.3.2
+pandas==2.0.3
