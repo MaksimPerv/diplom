@@ -40,9 +40,8 @@ Thumbs.db
 *.pt
 
 # --- Видео и большие данные ---
-data/raw_videos/*
+README_DIPLOM2_INSERTS.md
 !data/raw_videos/.gitkeep
-data/test_videos/*
 !data/test_videos/.gitkeep
 
 # Обработанные артефакты: позы, датасет, модели, графики
