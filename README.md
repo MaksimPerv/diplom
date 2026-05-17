@@ -10,9 +10,9 @@ diplom/
 ├── src/                    # модули: поза, признаки, обучение
 ├── data/
 │   ├── labels.csv          # разметка: filename → class_id (0–3)
-│   ├── raw_videos/         # обучающие видео (не в Git)
-│   ├── test_videos/        # новые видео для оценки (не в Git)
-│   └── processed/          # датасет, модели, метрики (не в Git)
+│   ├── raw_videos/         # обучающие видео 
+│   ├── test_videos/        # новые видео для оценки 
+│   └── processed/          # датасет, модели, метрики 
 ├── main.py                 # демо: извлечение позы и визуализация
 ├── train_score_model.py    # подготовка данных и обучение MLP / BiGRU
 ├── predict_video.py        # оценка нового видео
