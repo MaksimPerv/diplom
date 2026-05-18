@@ -29,17 +29,8 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-При первом запуске Ultralytics автоматически скачает веса `yolov8n-pose.pt` (или укажите другую модель).
 
 ## Подготовка данных
-
-1. Положите обучающие ролики в `data/raw_videos/`.
-2. Заполните `data/labels.csv`:
-
-```csv
-filename,class_id,notes
-IMG_0001.mov,2,
-```
 
 `class_id`: 0 — плохо, 1 — удовлетворительно, 2 — хорошо, 3 — отлично.
 
@@ -72,21 +63,10 @@ python predict_video.py --video data/test_videos/example.MOV
 python main.py --video path/to/video.mov --backend yolo
 ```
 
-## OpenPose (опционально)
-
-Нужен собранный бинарник OpenPose и переменная окружения:
+## OpenPose
 
 ```bash
 export OPENPOSE_BIN=/path/to/openpose/build/examples/openpose/openpose.bin
 python main.py --video video.mov --backend openpose
 ```
 
-## Что не попадает в Git
-
-См. `.gitignore`: видео, веса `.pt`, обработанные `.npz`/модели, виртуальное окружение, файлы Word диплома.
-
-В репозитории остаются **исходный код** и `data/labels.csv` (если не удалите его перед публикацией).
-
-## Лицензия
-
-Укажите лицензию при публикации (например, MIT), если требуется кафедрой.
